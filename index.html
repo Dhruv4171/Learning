@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="/script/app.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <h1>SKIT Parking System</h1>
+    </header>
+    <main>
+        <div class="user_registration">
+
+            <form action="">
+                <h1>User Registration</h1>
+                <input type="text" name="" id="ownerName" placeholder="Name" required pattern="[A-Z a-z]+" />
+                <input type="text" name="" id="ownerContact" placeholder="Contact" required patter="[0-9]{10}" />
+                <!-- <label>
+                    Select Gender
+                </label>
+                    <label><input type="radio" name="gender" id="" required>Male</label>
+                    <label><input type="radio" name="gender" id="" required>Female</label> -->
+                    <select required id="ownerRole">
+                        <option disabled selected>--SelectRole--</option>
+                        <option>Student</option>
+                        <option>Faculty</option>
+                    </select>
+                <input type="submit" value="Submit" id="userSubmitButton">
+            </form>
+        </div>
+        <div class="vehicle_registration">
+            <form action="">
+                <h1>Vehicle Registration</h1>
+                <div><input type="text" name="" id="vehicleName" placeholder="Registration Number" required pattern="[A-Z0-9]+" />
+                </div>
+                <select required id="vehicleType">
+                    <option disabled selected>--SelectTpye--</option>
+                    <option>Car</option>
+                    <option>Cycle</option>
+                    <option>Motor Cycle</option>
+                </select>
+            <!-- <input type="text" name="" id="ownerName" placeholder="User Name"> -->
+                <input type="submit" value="Submit" id="vehicleSubmitButton">
+
+            </form>
+        </div>
+        <div class="passChoice">
+            <form action="" id="passChoice">
+                <h1>Pass Choice</h1>
+                <!-- <input type="button" value="Daily Pass" required>
+                <input type="button" value="Monthly Pass" required>
+                <input type="button" value="Yearly Pass" required> -->
+            </form>
+        </div>
+        <div id="ticket">
+            <!-- <div id="pass">
+            <h1>Pass</h1>
+            <div><label>PassID:</label>
+                <label>_________________</label></div>
+            <div><label>VehicleID:</label>
+                <label>_________________</label></div>
+            <div> <label>Owner Name:</label>
+                <label>_________________</label></div>
+            <div> <label>Expiry:</label>
+                <label>_________________</label></div>
+            </div> -->
+        </div>
+    </main>
+    <footer>
+        &copy:Copyright 2023|SKIT
+    </footer>
+</body>
+
+</html>
